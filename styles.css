@@ -14,16 +14,26 @@ a {
   color: white;
   transition: 500ms;
   opacity: 60%;
+  transition: 300ms;
+}
+a:hover {
+  opacity: 100%;
 }
 
 ul {
   list-style: none;
+}
+.pfp {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 /* -------------------HEADER SECTION------------------------ */
 
 header {
   display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* ===========>> NAVBAR ====== */
@@ -45,6 +55,11 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
+  transition: 800ms;
+}
+#Logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 #Logo h1 {
   font-size: 1.3rem;
@@ -119,6 +134,7 @@ nav {
   height: 12vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
 #usermenu div {
@@ -143,6 +159,12 @@ nav {
   width: 20%;
   justify-content: space-around;
   text-align: left;
+  height: 65px;
+  border-radius: 32px;
+  transition: 500ms;
+}
+#usermenu div:nth-child(2):hover {
+  background-color: var(--accent-color);
 }
 #usermenu h1 {
   font-size: large;
@@ -160,11 +182,6 @@ nav {
 #sort:hover {
   opacity: 100%;
 }
-#pfp {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-}
 /* ~~~~~~~~~~~~USERMENU END~~~~~~~~~~~~~~~~~*/
 
 /* ~~~~~~~~~~~~~~~~~~~DASHBOARD~~~~~~~~~~~~~~~~ */
@@ -178,19 +195,75 @@ nav {
   opacity: 60%;
 }
 /* ==> GRAPHS ===> */
-#charts{
+#charts {
   display: flex;
   justify-content: space-between;
-  margin-top: 2%;
-  margin-right: 1%;
+  margin-top: 0;
+  margin-right: 3%;
   margin-left: 21.5%;
 }
-.chart{
+.chart {
   height: 170px;
   width: 300px;
   background-color: white;
   padding: 20px;
   border-radius: 30px;
   box-shadow: 1px 1px 2px #eceafb;
+  transition: 600ms;
+}
+
+.chart:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 5px #eceafb;
 }
 /* ======= GRAPHS END ======= */
+
+/* ~~~~~~~~~~~~~~~~~ DASHBOARD END ~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~ RECENT MESSAGES ~~~~~~~~~~~~~~~~~~~~~~ */
+
+#recentmsgs {
+  margin-top: 2%;
+  padding: 20px;
+  overflow: hidden;
+  height: 40vh;
+}
+#recentmsgs h1 {
+  font-size: larger;
+  opacity: 60%;
+}
+#msgContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 27vh;
+  background-color: white;
+  padding: 0px 20px;
+  border-radius: 32px;
+}
+#msgContent div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transform: scale(0.8);
+}
+#msgContent h2 {
+  font-size: medium;
+}
+#msgContent div:not(#pfps) {
+  height: 85.8%;
+}
+#msgContent div:nth-child(2) {
+  margin-left: -10%;
+}
+#msgContent div:last-child {
+  align-items: center;
+}
+#msgContent div * {
+  transition: 600ms;
+}
+#msgContent div *:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}

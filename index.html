@@ -81,8 +81,8 @@
         </div>
         <ul>
           <div id="menu">
-            <li id="activeLink">
-              <a href="index.html"
+            <li >
+              <a id="activeLink" href="index.html"
                 ><i style="display: inline" class="fa-thin fa-house-blank"></i
                 >Dashboard</a
               >
@@ -154,7 +154,16 @@
             <p>Welcome User!</p>
           </div>
         </div>
+        <div id="charts" class="dashboardmargin">
+          <div class="chart"><canvas id="bar1"></canvas></div>
+          <div class="chart"><canvas id="bar2"></canvas></div>
+          <div class="chart"><canvas id="line"></canvas></div>
+        </div>
       </div>
     </header>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    <script src="chart3.js"></script>
   </body>
 </html>

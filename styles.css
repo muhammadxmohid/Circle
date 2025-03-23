@@ -14,6 +14,10 @@ a {
   color: white;
   transition: 500ms;
   opacity: 60%;
+  transition: 300ms;
+}
+a:hover {
+  opacity: 100%;
 }
 
 ul {
@@ -21,8 +25,8 @@ ul {
 }
 .pfp {
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 /* -------------------HEADER SECTION------------------------ */
 
@@ -51,6 +55,11 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
+  transition: 800ms;
+}
+#Logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 #Logo h1 {
   font-size: 1.3rem;
@@ -125,6 +134,7 @@ nav {
   height: 12vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
 #usermenu div {
@@ -149,6 +159,12 @@ nav {
   width: 20%;
   justify-content: space-around;
   text-align: left;
+  height: 65px;
+  border-radius: 32px;
+  transition: 500ms;
+}
+#usermenu div:nth-child(2):hover {
+  background-color: var(--accent-color);
 }
 #usermenu h1 {
   font-size: large;
@@ -165,11 +181,6 @@ nav {
 #sort:focus,
 #sort:hover {
   opacity: 100%;
-}
-.pfp {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
 }
 /* ~~~~~~~~~~~~USERMENU END~~~~~~~~~~~~~~~~~*/
 
@@ -188,7 +199,7 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-top: 0;
-  margin-right: 1%;
+  margin-right: 3%;
   margin-left: 21.5%;
 }
 .chart {
@@ -198,6 +209,12 @@ nav {
   padding: 20px;
   border-radius: 30px;
   box-shadow: 1px 1px 2px #eceafb;
+  transition: 600ms;
+}
+
+.chart:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 5px #eceafb;
 }
 /* ======= GRAPHS END ======= */
 
@@ -215,28 +232,6 @@ nav {
   font-size: larger;
   opacity: 60%;
 }
-/* #msgsContent{
-  padding: 30px;
-background-color: white;  transform: scale(0.85);
-border-radius: 30px;
-}
-#msgsContent h2{
-  font-size: medium;
-  background-color: red;
-  display: inherit;
-
-}
-.msgsHeading{
-  margin-left: -100px;
-}
-#msgsContent div{
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 10px;
-
-} */
 #msgContent {
   display: flex;
   align-items: center;
@@ -264,4 +259,11 @@ border-radius: 30px;
 }
 #msgContent div:last-child {
   align-items: center;
+}
+#msgContent div * {
+  transition: 600ms;
+}
+#msgContent div *:hover {
+  transform: scale(1.09);
+  cursor: pointer;
 }

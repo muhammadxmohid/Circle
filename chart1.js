@@ -6,7 +6,7 @@ new Chart(bar1, {
     labels: ['', '', '', '', '', ''], // Empty labels
     datasets: [{
       label: 'Revenue',
-      data: [12, 29, 13, 15, 20, 13],
+      data: [12, 29, 13, 15, 12, 13],
       backgroundColor: '#635fff', // Bars are now #635fff
       borderWidth: 1,
       borderRadius: 50, // Ensures full rounded bars

@@ -16,8 +16,8 @@ const chart = new Chart(line, {
     labels: ["", "", "", "", "", ""],
     datasets: [
       {
-        label: "Revenue",
-        data: [4471, 6471, 1046, 1274, 1643, 2074],
+        label: "Sales",
+        data: [12, 52, 34, 60, 65, 74],
         borderWidth: 3,
         pointRadius: 2, // Hides points
         pointHoverRadius: 7, // Prevents points from showing on hover

@@ -6,7 +6,7 @@ new Chart(bar1, {
     labels: ["", "", "", "", "", ""], // Empty labels
     datasets: [
       {
-        label: "Revenue",
+        label: "Revenue $",
         data: [2155, 2951, 1321, 1521, 1223, 1312],
         backgroundColor: "#635fff", // Bars are now #635fff
         borderWidth: 1,
